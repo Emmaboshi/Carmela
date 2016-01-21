@@ -1,7 +1,60 @@
 {{> organisms-header }}
 
-<main>
+<div role="main">
+	{{! Hero / masthead }}
+	{{> molecules-block-hero-plus }}
 
-</main>
+	{{! Three cols }}
+	<div class="l-colgroup-3">
+		{{# touts}}
+			<div class="col">
+				{{> molecules-block-inset }}
+			</div>
+		{{/ touts}}
+	</div><!--end 3up-->
+
+	<hr />
+
+	{{! Three cols }}
+	<div class="colgroup">
+		<div class="col">
+			<h2>Titolo h2</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta deserunt modi et cumque. Recusandae, dolorem nulla. Ipsum voluptates esse sit magnam! Dolorum suscipit veniam soluta dolores ducimus, inventore tenetur rerum?</p>
+			<p><a href="#" class="btn">Bottone</a></p>
+		</div>
+	</div>
+
+	{{! Four cols }}
+	<div class="colgroup-4">
+		<div class="col">
+			{{> atoms-square }}
+		</div>
+		<div class="col">
+			{{> atoms-square }}
+		</div>
+		<div class="col">
+			{{> atoms-square }}
+		</div>
+		<div class="col">
+			{{> atoms-square }}
+		</div>
+		<div class="col">
+			{{> atoms-square }}
+		</div>
+		<div class="col">
+			{{> atoms-square }}
+		</div>
+		<div class="col">
+			{{> atoms-square }}
+		</div>
+		<div class="col">
+			{{> atoms-square }}
+		</div>
+	</div>
+
+	{{! Newsletter }}
+	{{> molecules-newsletter }}
+
+</div><!--End role=main-->
 
 {{> organisms-footer }}
