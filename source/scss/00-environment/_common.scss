@@ -1,0 +1,53 @@
+/* ==========================================================================
+   #COMMON
+   ========================================================================== */
+
+// clearfix
+%clearfix {
+	&:before,
+	&:after {
+		content: ' '; // 1
+		display: table; // 2
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+
+// Should we default ul to list-resets?
+%list-reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+// Hide only visually, but have it available for screen readers:
+// http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+%visuallyHidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+%word-break {
+	-ms-word-break: break-word;
+	word-break: break-word;
+	word-wrap: break-word;
+
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+%debug {
+	background-color: rgba(255,0,0,.1);
+	outline: 2px solid #c00;
+}
