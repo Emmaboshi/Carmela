@@ -15,8 +15,10 @@
 	#FONTS
 	========================================================================== */
 /**
+/* Myfonts.com set */
+/**
  * @license
- * MyFonts Webfont Build ID 3157574, 2016-01-21T06:23:58-0500
+ * MyFonts Webfont Build ID 3157585, 2016-01-21T06:49:20-0500
  * 
  * The fonts listed in this notice are subject to the End User License
  * Agreement(s) entered into by the website owner. All other parties are 
@@ -45,7 +47,7 @@
  * Copyright: Copyright &#x00A9; 2014 by Type Dynamic. All rights reserved.
  * 
  * 
- * License: http://www.myfonts.com/viewlicense?type=web&buildid=3157574
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3157585
  * Licensed pageviews: 10,000
  * 
  * © 2016 MyFonts Inc
@@ -53,40 +55,30 @@
 
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/302e46");
+@import url("//hello.myfonts.net/count/302e51");
 
   
-@font-face {font-family: 'DharmaSlabM-Bold';src: url('../fonts/302E46_0_0.eot');src: url('../fonts/302E46_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/302E46_0_0.woff2') format('woff2'),url('../fonts/302E46_0_0.woff') format('woff'),url('../fonts/302E46_0_0.ttf') format('truetype');}
+@font-face {font-family: 'DharmaSlab';font-weight: bold;font-style: normal;src: url('webfonts/302E51_0_0.eot');src: url('webfonts/302E51_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/302E51_0_0.woff2') format('woff2'),url('webfonts/302E51_0_0.woff') format('woff'),url('webfonts/302E51_0_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Sailec-Bold';src: url('../fonts/302E46_1_0.eot');src: url('../fonts/302E46_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/302E46_1_0.woff2') format('woff2'),url('../fonts/302E46_1_0.woff') format('woff'),url('../fonts/302E46_1_0.ttf') format('truetype');}
+@font-face {font-family: 'Sailec';font-weight: bold;font-style: normal;src: url('webfonts/302E51_1_0.eot');src: url('webfonts/302E51_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/302E51_1_0.woff2') format('woff2'),url('webfonts/302E51_1_0.woff') format('woff'),url('webfonts/302E51_1_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Sailec-BoldItalic';src: url('../fonts/302E46_2_0.eot');src: url('../fonts/302E46_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/302E46_2_0.woff2') format('woff2'),url('../fonts/302E46_2_0.woff') format('woff'),url('../fonts/302E46_2_0.ttf') format('truetype');}
+@font-face {font-family: 'Sailec';font-weight: bold;font-style: italic;src: url('webfonts/302E51_2_0.eot');src: url('webfonts/302E51_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/302E51_2_0.woff2') format('woff2'),url('webfonts/302E51_2_0.woff') format('woff'),url('webfonts/302E51_2_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Sailec-Regular';src: url('../fonts/302E46_3_0.eot');src: url('../fonts/302E46_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/302E46_3_0.woff2') format('woff2'),url('../fonts/302E46_3_0.woff') format('woff'),url('../fonts/302E46_3_0.ttf') format('truetype');}
+@font-face {font-family: 'Sailec';font-weight: normal;font-style: normal;src: url('webfonts/302E51_3_0.eot');src: url('webfonts/302E51_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/302E51_3_0.woff2') format('woff2'),url('webfonts/302E51_3_0.woff') format('woff'),url('webfonts/302E51_3_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Sailec-RegularItalic';src: url('../fonts/302E46_4_0.eot');src: url('../fonts/302E46_4_0.eot?#iefix') format('embedded-opentype'),url('../fonts/302E46_4_0.woff2') format('woff2'),url('../fonts/302E46_4_0.woff') format('woff'),url('../fonts/302E46_4_0.ttf') format('truetype');}
+@font-face {font-family: 'Sailec';font-weight: normal;font-style: italic;src: url('webfonts/302E51_4_0.eot');src: url('webfonts/302E51_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/302E51_4_0.woff2') format('woff2'),url('webfonts/302E51_4_0.woff') format('woff'),url('webfonts/302E51_4_0.ttf') format('truetype');}
  
+
+/* End Myfonts.com set */
 
 %font-primary {
-	font-family: 'DharmaSlabM-Bold', Helvetica, Arial, sans-serif;
+	font-family: 'DharmaSlab', 'Comic Sans', Helvetica, Arial, sans-serif;
 }
 
-%font-secondary-regular {
-	font-family: 'Sailec-Regular', Helvetica, Arial, sans-serif;
-}
-
-%font-secondary-regular-italic {
-	font-family: 'Sailec-RegularItalic', Helvetica, Arial, sans-serif;
-}
-
-%font-secondary-bold {
-	font-family: 'Sailec-Bold', Helvetica, Arial, sans-serif;
-}
-
-%font-secondary-bold-italic {
-	font-family: 'Sailec-BoldItalic', Helvetica, Arial, sans-serif;
+%font-secondary {
+	font-family: 'Sailec', Helvetica, Arial, sans-serif;
 }
