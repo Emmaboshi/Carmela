@@ -12,12 +12,24 @@
 
 body {
 	@extend %font-body;
+	color: $c-dark-grey;
 }
 
 p {
 	@extend %font-body;
+	max-width: 40rem;
 }
 
+a {
+	text-decoration: none;
+	color: $c-primary;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+
+}
 
 
 /*
@@ -28,19 +40,19 @@ p {
 	@extend %font-primary;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	@extend %font-headings;
+	@extend %font-body;
 }
 
-// %h1,
-// h1 {
-// }
-//
+%h1,
+h1 {
+   @extend %font-headings;
+}
+
 // %h2,
 // h2 {
 // }

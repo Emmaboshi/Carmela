@@ -12,3 +12,42 @@
 /*
    Grid system
    ========================================================================== */
+
+
+[class^="colgroup"] {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.col {
+	max-width: 30em;
+
+	.colgroup & {
+		width: 95%;
+		max-width: 38rem;
+	}
+
+	.colgroup-2 & {
+		width: 50%;
+	}
+
+	.colgroup-3 & {
+		width: 33%;
+	}
+
+	.colgroup-4 & {
+		width: 25%;
+	}
+
+	.colgroup-5 & {
+		width: 20%;
+
+	}
+
+}
