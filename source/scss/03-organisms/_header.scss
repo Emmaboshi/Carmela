@@ -3,5 +3,28 @@
    ========================================================================== */
 
 
-// .header {
-// }
+.header {
+	text-align: center;
+	position: relative;
+
+	.logo,
+	.logo-secondary {
+		display: block;
+	}
+
+	.logo {
+		max-width: 20em;
+	}
+
+	.logo-secondary {
+		max-width: 8em;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+.header__address {
+	text-align: center;
+}
+
