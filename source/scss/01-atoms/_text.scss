@@ -6,33 +6,35 @@
    #General
    ========================================================================== */
 
-// %font-body {
-// }
+%font-body {
+	@extend %font-secondary-regular;
+}
 
-// body {
-// 	@extend %font-body;
-// }
+body {
+	@extend %font-body;
+}
 
-// p {
-// 	@extend %font-body;
-// }
+p {
+	@extend %font-body;
+}
 
 
 /*
    #Headings
    ========================================================================== */
 
-// %font-headings {
-// }
-//
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-// 	@extend %font-headings;
-// }
+%font-headings {
+	@extend %font-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@extend %font-headings;
+}
 
 // %h1,
 // h1 {

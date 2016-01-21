@@ -1,0 +1,17 @@
+<table style="font-size:14px">
+	{{#iconsList}}
+	<tr>
+		<td style="height:40px;">{{> atoms-icon(description: Icon description) }}</td>
+		<td style="height:40px;">{{> atoms-icon(description: Icon description, disabled: true) }}</td>
+		<td style="height:40px;">{{> atoms-icon(description: Icon description, nocircle: true) }}</td>
+		<td style="height:40px;">{{> atoms-icon(description: Icon description, nocircle: true, tinted: true) }}</td>
+		<td style="height:40px;">{{> atoms-icon(description: Icon description, small: true) }}</td>
+		<td style="height:40px;">{{> atoms-icon(description: Icon description, small: true, nocircle: true) }}</td>
+		<td style="height:40px;">{{> atoms-icon(description: Icon description, small:true, nocircle:true, tinted: true) }}</td>
+		<td style="height:40px;">{{> atoms-icon(description: Icon description, xsmall: true) }}</td>
+		<td style="height:40px;">{{> atoms-icon(description: Icon description, xsmall: true, nocircle: true) }}</td>
+		<td style="height:40px;">{{> atoms-icon(description: Icon description, xsmall:true, nocircle:true, tinted: true) }}</td>
+		<td style="height:40px;">{{id}}</td>
+	</tr>
+	{{/iconsList}}
+</table>

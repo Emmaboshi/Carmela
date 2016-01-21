@@ -1,0 +1,21 @@
+{{!
+
+	GENERIC LINK ATOM
+
+	Usage:
+
+	atoms-link:class(
+		external: boolean,
+		arrow: boolean,
+		video-link: boolean,     // adds video icon before link
+		gallery-link: boolean,   // adds gallery icon before link
+		link-url: url,
+		link-label: label
+	)
+
+
+
+}}
+
+
+<a class="external {{ styleModifier }}" href="{{ link-url }}">{{# video-link }}{{> atoms-icon:video-link(nocircle: true, tinted: true) }}{{/ video-link }}{{# gallery-link }}{{> atoms-icon:gallery-link(nocircle: true, tinted: true) }}{{/ gallery-link }}{{ link-label }}{{# arrow }} {{> atoms-icon:next(nocircle: true, small: true) }}{{/ arrow}}</a>
