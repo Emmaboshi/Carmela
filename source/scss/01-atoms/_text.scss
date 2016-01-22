@@ -30,6 +30,11 @@ p {
 	article & {
 		max-width: 40rem;
 	}
+
+	&.intro {
+		font-size: 1.3rem;
+		line-height: 1.9rem;
+	}
 }
 
 a {
