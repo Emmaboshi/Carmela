@@ -27,8 +27,8 @@ p {
 	@extend %font-body;
 	margin: 0 0 1rem;
 
-	article & {
-		max-width: 40rem;
+	@include untilTablet {
+		line-height: 1.5rem;
 	}
 
 	&.intro {
@@ -45,9 +45,7 @@ a {
 	&:focus {
 		text-decoration: underline;
 	}
-
 }
-
 
 /*
    #Headings
@@ -72,6 +70,10 @@ h6 {
 	
 	@include onMobile {
 		line-height: 3rem;
+	}
+
+	@include fromTablet {
+		font-size: 4rem;
 	}
 
 	@include fromDesktop {
@@ -111,5 +113,24 @@ blockquote {
 
 	@include fromTablet {
 		padding-left: 2.5em;
+	}
+}
+
+/*
+   #Heading group
+   ========================================================================== */
+
+.hgroup {
+	text-align: center;
+	max-width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+
+	.page-title {
+		color: $c-primary;
+
+		+ * {
+			color: $c-medium-grey;
+		}
 	}
 }

@@ -15,8 +15,22 @@
 %wrapper,
 .wrapper {
 	width: 95%;
-	max-width: $text-line-length;
+	max-width: $desktop-breakpoint;
 	margin: 0 auto;
+}
+
+.wrapper-article {
+	text-align: center;
+
+	> article {
+		text-align: left;
+		margin: 0 auto;
+	}
+}
+
+
+article {
+	max-width: $text-line-length;
 }
 
 /*
@@ -36,10 +50,9 @@
 }
 
 .col {
-
 	.colgroup & {
 		width: 95%;
-		max-width: 30rem;
+		max-width: $text-line-length;
 	}
 
 	.colgroup-2 & {
