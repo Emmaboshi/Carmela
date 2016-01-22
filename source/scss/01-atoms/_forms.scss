@@ -44,10 +44,18 @@ input[type='text'] {
 	min-width: 22rem;
 
 	.is-wrong & {
+		background-image: url("../images/arrow-left.svg");
+		background-position: right 12px top 14px;
+		background-size: 20px 20px;
+		background-repeat: no-repeat;
 		border-color: $c-error-red;
 	}
 
 	.is-valid & {
+		background-image: url("../images/checkmark.svg");
+		background-position: right 12px top 14px;
+		background-size: 20px 20px;
+		background-repeat: no-repeat;
 		border-color: $c-success-green;
 	}
 }
@@ -57,8 +65,9 @@ textarea {
 }
 
 select {
-	// background-image: url("../images/.png");
-	// background-position: right 15px top 12px;
+	background-image: url("../images/chevron-down.svg");
+	background-position: right 12px top 14px;
+	background-size: 20px 20px;
 	background-repeat: no-repeat;
 	-moz-appearance: none;
 	text-overflow: "";
