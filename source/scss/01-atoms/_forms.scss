@@ -42,6 +42,14 @@ input[type='text'] {
 	line-height: $form-line-height;
 	padding: .8rem .8rem .6rem;
 	min-width: 22rem;
+
+	.is-wrong & {
+		border-color: $c-error-red;
+	}
+
+	.is-valid & {
+		border-color: $c-success-green;
+	}
 }
 
 textarea {
@@ -81,4 +89,8 @@ label {
 	margin-top: 0.4rem;
 	display: block;
 	color: c-medium-grey;
+
+	.is-wrong & {
+		color: $c-error-red;
+	}
 }
