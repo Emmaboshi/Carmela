@@ -1,0 +1,169 @@
+/* ==========================================================================
+   Block
+   ========================================================================== */
+
+/* Block */
+.block {
+	overflow: hidden;
+}
+
+.headline {
+	line-height: 1.2;
+}
+
+/* Hero Block */
+$hero-background: rgba(0,0,0,.5);
+.block-hero {
+	margin-bottom: 2rem;
+
+	.b-thumb {
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.b-text {
+		width: 95%;
+		margin: 0 auto;
+		max-width: $text-line-length;
+	}
+
+	@include fromDesktop {
+		position: relative;
+
+		.b-thumb {
+			position: relative;
+
+			&:after {
+				background: $hero-background;
+				bottom: 0;
+				content: "";
+				display: block;
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		}
+
+		.b-text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			width: 700px;
+			color: white;
+			padding: 1.5rem;
+			text-align: center;
+		}
+	}
+}
+
+.block-hero.block-hero-plus {
+
+	@include fromDesktop {
+		.b-text {
+			bottom: 1rem;
+			top: auto;
+			left: 0;
+			transform: none;
+			width: 100%;
+			padding: 0 10%;
+			max-width: none;
+		}
+	}
+}
+
+/* Block Thumbnail with Headline */
+.block-thumb {
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+
+	.b-inner {
+		display: table-row;
+		vertical-align: top;
+		overflow: hidden;
+	}
+
+	.b-thumb {
+		@include fromTablet {
+			display: table-cell;
+			vertical-align: top;
+			width: 30%;
+			max-width: 10em;
+
+			img {
+				display: block;
+				  width: 100%;
+				  height: auto;
+	 		}
+ 		}
+	}
+
+	.b-text {
+		@include fromTablet {
+			display: table-cell;
+			width: 70%;
+			padding: 0 1rem;
+		}
+	}
+}
+
+
+/* Block Headline Summary */
+.block-headline-summary {
+	a {
+		display: block;
+		padding: .5rem;
+	}
+}
+
+/* Block Inset */
+.block-inset {
+	position: relative;
+
+	.b-thumb {
+		position: relative;
+		z-index: 0;
+
+		img {
+			display: block;
+		}
+	}
+}
+
+/* Hero Block */
+.block-inset {
+	margin-bottom: .5rem;
+	position: relative;
+
+	.headline {
+		font-size: 1.1em;
+	}
+
+	.b-text {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: $hero-background;
+		color: white;
+		padding: .5rem;
+	}
+}
+
+/* Block Thumb with Summary */
+.block-thumb-summary {
+	.b-thumb {
+		float: left;
+		width: 50%;
+	}
+
+	.b-text {
+		margin-left: 50%;
+		padding: .5rem;
+	}
+}

@@ -22,15 +22,15 @@
 	display: flex;
 
 	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
 	justify-content: space-around;
 }
 
 .col {
-	max-width: 30em;
 
 	.colgroup & {
 		width: 95%;
-		max-width: 38rem;
+		max-width: 30rem;
 	}
 
 	.colgroup-2 & {

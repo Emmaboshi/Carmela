@@ -25,7 +25,7 @@ dl {
 
 p {
 	@extend %font-body;
-	margin-bottom: .5rem;
+	margin: 0 0 1rem;
 
 	article & {
 		max-width: 40rem;
@@ -52,6 +52,7 @@ a {
 	@extend %font-primary;
 }
 
+h1,
 h2,
 h3,
 h4,
@@ -60,10 +61,22 @@ h6 {
 	@extend %font-body;
 }
 
-%h1,
-h1 {
-   @extend %font-headings;
+.page-title {
+	@extend %font-headings;
+	font-size: 3rem;
+	
+	@include onMobile {
+		line-height: 3rem;
+	}
+
+	@include fromDesktop {
+		font-size: 5rem;
+		letter-spacing: 1px;
+	}
 }
+
+// %h1,
+// h1 {
 
 // %h2,
 // h2 {
