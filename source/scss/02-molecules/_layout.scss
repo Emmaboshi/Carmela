@@ -10,9 +10,18 @@
 
 
 /*
+   Generic wrapper
+   ========================================================================== */
+%wrapper,
+.wrapper {
+	width: 95%;
+	max-width: $text-line-length;
+	margin: 0 auto;
+}
+
+/*
    Grid system
    ========================================================================== */
-
 
 [class^="colgroup"] {
 	display: -webkit-box;

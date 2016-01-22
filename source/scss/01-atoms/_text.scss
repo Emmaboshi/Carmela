@@ -93,3 +93,18 @@ h6 {
 // %h5,
 // h5 {
 // }
+
+
+/*
+   #Quote
+   ========================================================================== */
+
+blockquote {
+	border-left: solid 5px $c-light-grey;
+	margin: 0;
+	padding: 0 1.5rem 0 1.5rem;
+
+	@include fromTablet {
+		padding-left: 2.5em;
+	}
+}
