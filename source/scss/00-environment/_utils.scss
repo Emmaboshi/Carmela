@@ -1,0 +1,27 @@
+/* Display Classes */
+.hide-small {
+	@include onMobile {
+		display: none;
+	}
+}
+
+.hide-med {
+	@include onTablet {
+		display: none;
+	}
+}
+
+.hide-large {
+	@include fromDesktop {
+		display: none;
+	}
+}
+
+/* Text Alignment */
+.align-right {
+	text-align: right;
+}
+
+.align-center {
+	text-align: center;
+}

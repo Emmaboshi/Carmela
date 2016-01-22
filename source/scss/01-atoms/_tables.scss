@@ -2,11 +2,44 @@
    Tables
    ========================================================================== */
 
-// table {
-// 	border-collapse: collapse;
-// 	border-spacing: 0;
-// }
+// table
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	max-width: 100%;
+	margin-bottom: 2rem;
+	text-align: left;
+}
 
-// td,
-// th {
-// }
+td,
+th {
+	padding: .5rem .5em .8em ;
+	vertical-align: top;
+}
+
+thead {
+	background-color: $c-dark-grey;
+	color: white;
+	text-align: left;
+
+	th {
+		border-right: solid 1px $c-medium-grey;
+
+		&:last-child {
+			border-right: none;
+		}
+	}
+}
+
+tbody {
+	tr {
+		&:nth-of-type(even) {
+			background-color: $c-light-grey;
+		}
+	}
+}
+
+tfoot {
+	text-align: left;
+	border-top: solid 1px $c-dark-grey;
+}

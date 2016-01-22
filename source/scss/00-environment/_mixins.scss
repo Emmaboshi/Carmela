@@ -91,6 +91,12 @@
 	}
 }
 
+@mixin onTablet() {
+	@media only screen and (min-width: $mobile-breakpoint) and (max-width: $desktop-breakpoint) {
+		@content;
+	}
+}
+
 @mixin fromTablet() {
 	@media only screen and (min-width: $tablet-breakpoint) {
 		@content;
