@@ -1,0 +1,78 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn {
+	background-color: $c-primary;
+	border-radius: 4px;
+	border: solid 2px $c-primary;
+	color: white;
+	display: inline-block;
+	padding: .7rem 1.2rem .5rem;
+	text-decoration: none;
+	white-space: nowrap;
+
+	&:hover,
+	&:focus {
+		background-color: $c-medium-grey;
+		border-color: $c-medium-grey;
+		text-decoration: none;
+	}
+
+	&:active {
+		background-color: $c-dark-grey;
+		border-color: $c-dark-grey;
+	}
+
+	&.disabled {
+		pointer-events: none;
+		cursor: default;
+		opacity: 0.5;
+	}
+}
+
+.btn--outline {
+	background-color: white;
+	color: $c-primary;
+
+	&:hover,
+	&:focus {
+		background-color: white;
+		border-color: $c-medium-grey;
+		color: $c-medium-grey;
+	}
+
+	&:active {
+		background-color: white;
+		border-color: $c-dark-grey;
+		color: $c-dark-grey;
+	}
+}
+
+.btn--big {
+	padding: 1rem 1.5rem .8rem;
+	font-size: 1.2rem;
+}
+
+.btn--small {
+	padding: .3rem .6rem .2rem;
+	font-size: .8rem;
+	line-height: 1.2rem;
+}
+
+.btn--gray {
+	background-color: $c-light-grey;
+	border-color: $c-light-grey;
+	color: $c-medium-grey;
+
+	&:hover,
+	&:focus {
+		color: white;
+	}
+}
+
+// .btn--white {
+// 	background-color: white;
+// 	border-color: $c-medium-grey;
+// 	color: $c-medium-grey;
+// }

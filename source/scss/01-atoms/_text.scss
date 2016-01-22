@@ -25,6 +25,7 @@ dl {
 
 p {
 	@extend %font-body;
+	margin-bottom: .5rem;
 
 	article & {
 		max-width: 40rem;

@@ -40,7 +40,7 @@ input[type='text'] {
 	border: solid 2px $c-medium-grey;
 	font-size: 1rem;
 	line-height: $form-line-height;
-	padding: .8rem .8rem .6rem;
+	padding: $form-padding;
 	min-width: 22rem;
 
 	.is-wrong & {
