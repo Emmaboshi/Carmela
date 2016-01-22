@@ -80,3 +80,40 @@
 	max-width: none;
 	opacity: 0;
 }
+
+/*
+	#MEDIA QUERIES
+	========================================================================== */
+
+@mixin onMobile() {
+	@media only screen and (max-width: $mobile-breakpoint) {
+		@content;
+	}
+}
+
+@mixin fromTablet() {
+	@media only screen and (min-width: $tablet-breakpoint) {
+		@content;
+	}
+}
+
+@mixin fromDesktop() {
+	@media only screen and (min-width: $desktop-breakpoint) {
+		@content;
+	}
+}
+
+@mixin fromCinema() {
+	@media only screen and (min-width: $cinema-breakpoint) {
+		@content;
+	}
+}
+
+/* 
+****** Example ******
+
+@include onMobile {
+	background-color: red;
+}
+
+*/

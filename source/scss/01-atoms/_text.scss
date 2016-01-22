@@ -13,6 +13,14 @@
 body {
 	@extend %font-body;
 	color: $c-dark-grey;
+	font-size: 16px;
+}
+
+p,
+ul,
+ol,
+dl {
+	line-height: $text-line-height;
 }
 
 p {

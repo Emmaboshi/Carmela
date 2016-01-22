@@ -91,19 +91,19 @@ $c-error-red: #fc1e29;
 @import url("//hello.myfonts.net/count/302e51");
 
   
-@font-face {font-family: 'DharmaSlab';font-weight: bold;font-style: normal;src: url('../fonts/302E51_0_0.eot');src: url('../fonts/302E51_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/302E51_0_0.woff2') format('woff2'),url('../fonts/302E51_0_0.woff') format('woff'),url('../fonts/302E51_0_0.ttf') format('truetype');}
+@font-face {font-family: 'DharmaSlab';font-weight: bold;font-style: normal;src: url('../fonts/myfonts/302E51_0_0.eot');src: url('../fonts/myfonts/302E51_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/myfonts/302E51_0_0.woff2') format('woff2'),url('../fonts/myfonts/302E51_0_0.woff') format('woff'),url('../fonts/myfonts/302E51_0_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Sailec';font-weight: bold;font-style: normal;src: url('../fonts/302E51_1_0.eot');src: url('../fonts/302E51_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/302E51_1_0.woff2') format('woff2'),url('../fonts/302E51_1_0.woff') format('woff'),url('../fonts/302E51_1_0.ttf') format('truetype');}
+@font-face {font-family: 'Sailec';font-weight: bold;font-style: normal;src: url('../fonts/myfonts/302E51_1_0.eot');src: url('../fonts/myfonts/302E51_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/myfonts/302E51_1_0.woff2') format('woff2'),url('../fonts/myfonts/302E51_1_0.woff') format('woff'),url('../fonts/myfonts/302E51_1_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Sailec';font-weight: bold;font-style: italic;src: url('../fonts/302E51_2_0.eot');src: url('../fonts/302E51_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/302E51_2_0.woff2') format('woff2'),url('../fonts/302E51_2_0.woff') format('woff'),url('../fonts/302E51_2_0.ttf') format('truetype');}
+@font-face {font-family: 'Sailec';font-weight: bold;font-style: italic;src: url('../fonts/myfonts/302E51_2_0.eot');src: url('../fonts/myfonts/302E51_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/myfonts/302E51_2_0.woff2') format('woff2'),url('../fonts/myfonts/302E51_2_0.woff') format('woff'),url('../fonts/myfonts/302E51_2_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Sailec';font-weight: normal;font-style: normal;src: url('../fonts/302E51_3_0.eot');src: url('../fonts/302E51_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/302E51_3_0.woff2') format('woff2'),url('../fonts/302E51_3_0.woff') format('woff'),url('../fonts/302E51_3_0.ttf') format('truetype');}
+@font-face {font-family: 'Sailec';font-weight: normal;font-style: normal;src: url('../fonts/myfonts/302E51_3_0.eot');src: url('../fonts/myfonts/302E51_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/myfonts/302E51_3_0.woff2') format('woff2'),url('../fonts/myfonts/302E51_3_0.woff') format('woff'),url('../fonts/myfonts/302E51_3_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Sailec';font-weight: normal;font-style: italic;src: url('../fonts/302E51_4_0.eot');src: url('../fonts/302E51_4_0.eot?#iefix') format('embedded-opentype'),url('../fonts/302E51_4_0.woff2') format('woff2'),url('../fonts/302E51_4_0.woff') format('woff'),url('../fonts/302E51_4_0.ttf') format('truetype');}
+@font-face {font-family: 'Sailec';font-weight: normal;font-style: italic;src: url('../fonts/myfonts/302E51_4_0.eot');src: url('../fonts/myfonts/302E51_4_0.eot?#iefix') format('embedded-opentype'),url('../fonts/myfonts/302E51_4_0.woff2') format('woff2'),url('../fonts/myfonts/302E51_4_0.woff') format('woff'),url('../fonts/myfonts/302E51_4_0.ttf') format('truetype');}
  
 
 /* End Myfonts.com set */
@@ -115,4 +115,21 @@ $c-error-red: #fc1e29;
 %font-secondary {
 	font-family: 'Sailec', Helvetica, Arial, sans-serif;
 }
+
+/* Generic text variables */
+$text-line-height: 1.6875rem;
+
+/* Form text variables */
+$form-line-height: 1.6875rem;
+
+
+/*
+	#MEDIA QUERIES
+	========================================================================== */
+
+// responsive variables used in mixins.scss
+$mobile-breakpoint: 25em; // mobile portrait width ~400 - 1 prima 2 poi
+$tablet-breakpoint: 48em; // tablet portrait width ~768 - 2 prima 3 poi
+$desktop-breakpoint: 64em; // desktop landscape width ~1152 - 3 prima 4 poi - prima era 72
+$cinema-breakpoint: 88em; // cinema landscape width ~1200 - 4 prima 5 poi
 
