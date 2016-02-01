@@ -16,4 +16,12 @@
 		height: 56px;
 		display: block;
 	}
+
+	.command {
+		font-size: .8rem;
+
+		@fromTablet {
+			font-size: .9rem;
+		}
+	}
 }
