@@ -12,7 +12,6 @@
 
 body {
 	@extend %font-body;
-	color: $c-dark-grey;
 	font-size: 16px;
 }
 
@@ -39,7 +38,6 @@ p {
 
 a {
 	text-decoration: none;
-	color: $c-primary;
 
 	&:hover,
 	&:focus {
@@ -50,8 +48,6 @@ a {
 hr {
 	border: 0; 
 	height: 1px; 
-	background: #333; 
-	background-image: linear-gradient(to right, white, $c-primary, white);
 	margin: 3rem 0;
 }
 
@@ -135,7 +131,6 @@ blockquote {
 	margin-right: auto;
 
 	.page-title {
-		color: $c-primary;
 
 		+ * {
 			color: $c-medium-grey;

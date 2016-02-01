@@ -25,3 +25,12 @@
 .align-center {
 	text-align: center;
 }
+
+/* Single block of content */
+.single-block {
+	padding: 1rem;
+
+	@include fromTablet {
+		padding: 2rem 1rem;
+	}
+}
