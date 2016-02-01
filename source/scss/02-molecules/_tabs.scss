@@ -1,0 +1,44 @@
+/* ==========================================================================
+   Tabs
+   ========================================================================== */
+
+/* tabs */
+.tabs {
+	&,
+	ul {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	ul {
+		max-height: 0;
+		overflow: hidden;
+		display: block;
+		position: absolute;
+	}
+
+	> li {
+		display: inline-block;
+		position: relative;
+
+		&:hover,
+		&:focus {
+			ul {
+				max-height: 13em;
+			}
+		}
+	}
+
+
+	a {
+		display: block;
+		padding: 0.1rem 0.5rem;
+		border-bottom: solid 1px $c-light-grey;
+	}
+
+	ul a {
+		font-size: .8rem;
+		padding: 0 1rem;
+	}
+}
+
