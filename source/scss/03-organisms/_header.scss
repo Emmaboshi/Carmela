@@ -4,24 +4,29 @@
 
 
 .header {
-	text-align: center;
 	position: relative;
 
 	.logo,
 	.logo-secondary {
-		display: block;
+		display: inline-block;
 	}
 
 	.logo {
 		max-width: 20em;
+		width: 60%;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	.logo-secondary {
 		max-width: 8em;
+		width: 30%;
+		float: right;
 	}
 }
 
 .header__address {
 	text-align: center;
+	padding: 1rem 0;
 }
 

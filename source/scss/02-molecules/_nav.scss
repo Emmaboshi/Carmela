@@ -3,12 +3,20 @@
    ========================================================================== */
 
 .nav {
+	text-align: center;
 }
 
 .nav-list {
 	list-style: none;
+	border-top: solid 1px $c-borders;
+	border-bottom: solid 1px $c-borders;
 
 	> li {
 		display: inline-block;
+		padding: 0.5rem 1rem;
 	}
+}
+
+.nav-toggle {
+	display: none;
 }

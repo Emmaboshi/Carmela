@@ -1,10 +1,13 @@
 <header class="header" role="banner">
-	<p class="header__address">via Orfeo 32/2b · 40124 Bologna, Italy · tel +39 051 7166511 . <a href="mailto:studio@emmaboshi.net">studio@emmaboshi.net</a></p>
+	<div class="wrapper header__address">
+		<p>via Orfeo 32/2b · 40124 Bologna, Italy · tel +39 051 7166511 . <a href="mailto:studio@emmaboshi.net">studio@emmaboshi.net</a></p>
+	</div>
 
-	{{> atoms-logo }}
+	<div class="wrapper">
+		{{> atoms-logo }}
+		{{> atoms-logo-secondary }}
+	</div>
 
-	{{> atoms-logo-secondary }}
-
-	<a href="#nav" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
+	<a href="#nav" class="nav-toggle j-nav-toggle icon-menu"><span class="is-vishidden">Menu</span></a>
 	{{> molecules-primary-nav }}
 </header>
