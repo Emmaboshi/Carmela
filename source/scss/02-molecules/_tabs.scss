@@ -4,6 +4,9 @@
 
 /* tabs */
 .tabs {
+	border-bottom: solid 1px $c-light-grey;
+	padding: 0 2rem;
+
 	&,
 	ul {
 		list-style: none;
@@ -33,7 +36,14 @@
 	a {
 		display: block;
 		padding: 0.1rem 0.5rem;
-		border-bottom: solid 1px $c-light-grey;
+		border-bottom: solid 1px transparent;
+		color: $c-dark-grey;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			border-bottom: solid 2px $c-primary;
+		}
 	}
 
 	ul a {
