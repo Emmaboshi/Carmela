@@ -4,7 +4,14 @@
 
 
 .header {
-	position: relative;
+
+	@include fromTablet {
+		text-align: center;
+	}
+
+	.wrapper {
+		position: relative;
+	}
 
 	.logo,
 	.logo-secondary {
@@ -14,14 +21,19 @@
 	.logo {
 		max-width: 20em;
 		width: 60%;
-		margin-top: 2rem;
-		margin-bottom: 2rem;
+		margin: 2rem auto;
 	}
 
 	.logo-secondary {
 		max-width: 8em;
 		width: 30%;
 		float: right;
+
+		@include fromTablet {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
 	}
 }
 
