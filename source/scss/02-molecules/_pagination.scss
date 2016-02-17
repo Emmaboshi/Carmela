@@ -6,6 +6,7 @@
 .pagination {
 	list-style: none;
 	text-align: center;
+	padding: 0;
 
 	@include fromTablet {
 		position: relative;
@@ -16,8 +17,12 @@
 		background-color: rgba(255,255,255,0.2);
 		margin-right: 0.2rem;
 		height: 30px;
-		width: 30px;
+		width: 25px;
 		text-align: center;
+
+		@include fromTablet {
+			width: 30px;
+		}
 
 		&.pagination__arrow {
 			@include fromTablet {
