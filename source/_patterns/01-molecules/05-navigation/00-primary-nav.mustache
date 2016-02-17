@@ -1,8 +1,23 @@
-<nav id="nav" class="nav">
-	<ul class="nav-list">
-		<li><a href="{{ url }}">Home</a></li>
-		<li><a href="{{ url }}">About</a></li>
-		<li><a href="{{ url }}">Blog</a></li>
-		<li><a href="{{ url }}">Contact</a></li>
+<a href="javascript:;" class="nav__toggle j-nav-toggle" data-toggleclass-target=".j-nav">Menu <span class="icon-menu"></span></a>
+
+<nav class="nav j-nav">
+	<ul class="nav__list">
+		<li>
+			<a class="nav__link" href="{{ url }}">Home</a>
+		</li>
+		<li class="hasSubpages j-navexample">
+			<a class="nav__link" data-toggleclass-target=".j-navexample" href="javascript:;">About</a>
+			<ul class="nav__sublist">
+				<li><a class="nav__link" href=" {{ url }}">Subpage 1</a></li>
+				<li><a class="nav__link" href=" {{ url }}">Subpage 2</a></li>
+				<li><a class="nav__link" href=" {{ url }}">Subpage 3</a></li>
+			</ul>
+		</li>
+		<li>
+			<a class="nav__link" href="{{ url }}">Blog</a>
+		</li>
+		<li>
+			<a class="nav__link" href="{{ url }}">Contact</a>
+		</li>
 	</ul>
 </nav><!--end .nav-->

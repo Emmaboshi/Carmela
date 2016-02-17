@@ -13,23 +13,18 @@
 		position: relative;
 	}
 
-	.logo,
-	.logo-secondary {
-		display: inline-block;
-	}
-
 	.logo {
+		display: inline-block;
+		margin: 2rem auto;
 		max-width: 20em;
 		width: 60%;
-		margin: 2rem auto;
 	}
 
 	.logo-secondary {
-		max-width: 8em;
-		width: 30%;
-		float: right;
+		display: none;
 
 		@include fromTablet {
+			display: inline-block;
 			position: absolute;
 			right: 0;
 			top: 0;
@@ -38,7 +33,13 @@
 }
 
 .header__address {
+	@extend %small;
 	text-align: center;
 	padding: 1rem 0;
+	background-color: $c-primary-lighten;
+
+	p {
+		margin-bottom: 0;
+	}
 }
 
