@@ -11,6 +11,11 @@
 		&.isActive {
 			max-height: 100em;
 		}
+
+		@include fromTablet {
+			max-height: none;
+			overflow: visible;
+		}
 	}
 
 	ul {
@@ -19,6 +24,10 @@
 
 	li {
 		display: block;
+
+		@include fromTablet {
+			position: relative;
+		}
 	}
 }
 
@@ -26,8 +35,17 @@
 	border-bottom: solid 1px $c-borders;
 	margin: 0;
 	padding-left: 0;
+
+	@include fromTablet {
+		border-top: solid 1px $c-borders;
+
+		> li {
+			display: inline-block;
+		}
+	}
 }
 
+// subpages
 .nav__sublist {
 
 	.js & {
@@ -44,14 +62,31 @@
 	.no-js & {
 		border-top: solid 1px $c-borders;
 	}
+
+	@include fromTablet {
+
+		.js &,
+		.no-js & {
+			padding: 0 1rem 0 0;
+			position: absolute;
+			top: 100%;
+			background-color: rgba(255,255,255,0.5);
+		}
+	}
 }
 
+// nav links
 .nav__link {
 	border-top: solid 1px $c-borders;
 	color: $c-dark-grey;
 	display: block;
 	padding: .5rem 1rem .2rem;
 
+	@include fromTablet {
+		border-top: none;
+	}
+
+	// active status
 	.isActive > &,
 	&:hover,
 	&:focus {
@@ -83,6 +118,10 @@
 		@extend %small;
 		border-top-color: lighten($c-borders, 30%);
 		padding: 0.2rem .7rem 0;
+
+		@include fromTablet {
+			white-space: nowrap;
+		}
 	}
 
 	.nav__sublist li:first-child & {
@@ -102,6 +141,10 @@
 
 	.js & {
 		display: inline-block;
+
+		@include fromTablet {
+			display: none;
+		}
 	}
 
 	.header & {
