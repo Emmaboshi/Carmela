@@ -13,11 +13,11 @@
 
 /* Primary colors */
 $c-primary: #fc5728;
-$c-primary-lighten: #fdab8d;
-$c-primary-darken: #7e2b12;
+$c-primary-lighten: lighten($c-primary, 30%);
+$c-primary-darken: darken($c-primary, 30%);
 $c-secondary: #e50e46;
-$c-secondary-lighten: #f087a2;
-$c-secondary-darken: #710a25;
+$c-secondary-lighten: lighten($c-secondary, 30%);
+$c-secondary-darken: darken($c-secondary, 30%);
 
 /* Grayscale */
 $c-black: #000000;
