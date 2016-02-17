@@ -6,6 +6,7 @@
 .cookie {
 	display: none;
 	background-color: $c-lightest-grey;
+	border-top: solid 1px $c-medium-grey;
 
 	&.isActive {
 		display: block;
