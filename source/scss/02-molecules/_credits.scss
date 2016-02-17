@@ -6,5 +6,9 @@
 .credits {
 	@extend %small;
 	text-align: center;
-	
+	padding: .5rem;
+
+	p {
+		margin-bottom: 0;
+	}
 }
