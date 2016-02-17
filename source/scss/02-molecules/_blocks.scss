@@ -12,7 +12,8 @@
 }
 
 /* Hero Block */
-$hero-background: rgba(0,0,0,.5);
+$hero-background: $c-transparent-bg;
+
 .block-hero {
 	margin-bottom: 2rem;
 
@@ -30,7 +31,7 @@ $hero-background: rgba(0,0,0,.5);
 		max-width: $text-line-length;
 	}
 
-	@include fromDesktop {
+	@include fromTablet {
 		position: relative;
 
 		.b-thumb {
@@ -112,7 +113,6 @@ $hero-background: rgba(0,0,0,.5);
 	}
 }
 
-
 /* Block Headline Summary */
 .block-headline-summary {
 	a {
@@ -121,8 +121,9 @@ $hero-background: rgba(0,0,0,.5);
 	}
 }
 
-/* Block Inset */
-.block-inset {
+/* Block Card */
+.block-card {
+	margin-bottom: .5rem;
 	position: relative;
 
 	.b-thumb {
@@ -133,12 +134,6 @@ $hero-background: rgba(0,0,0,.5);
 			display: block;
 		}
 	}
-}
-
-/* Hero Block */
-.block-inset {
-	margin-bottom: .5rem;
-	position: relative;
 
 	.headline {
 		font-size: 1.1em;
@@ -151,19 +146,6 @@ $hero-background: rgba(0,0,0,.5);
 		width: 100%;
 		background: $hero-background;
 		color: white;
-		padding: .5rem;
-	}
-}
-
-/* Block Thumb with Summary */
-.block-thumb-summary {
-	.b-thumb {
-		float: left;
-		width: 50%;
-	}
-
-	.b-text {
-		margin-left: 50%;
 		padding: .5rem;
 	}
 }

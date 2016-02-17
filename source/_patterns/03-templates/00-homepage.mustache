@@ -15,16 +15,18 @@
 
 
 	{{! Single col }}
-	<div class="colgroup">
-		<div class="col">
-			<h2>Titolo h2</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta deserunt modi et cumque. Recusandae, dolorem nulla. Ipsum voluptates esse sit magnam! Dolorum suscipit veniam soluta dolores ducimus, inventore tenetur rerum?</p>
-			<hr />
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa vel cum, porro, deleniti magni est repellendus dolor minima at similique deserunt! Error amet animi vitae quis, maiores veritatis ad asperiores.</p>
-			<p><a href="#" class="btn">Bottone</a></p>
+	<div class="wrapper">
+		<div class="colgroup">
+			<div class="col">
+				{{> molecules-heading-group }}
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta deserunt modi et cumque. Recusandae, dolorem nulla. Ipsum voluptates esse sit magnam! Dolorum suscipit veniam soluta dolores ducimus, inventore tenetur rerum?</p>
+				<hr />
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa vel cum, porro, deleniti magni est repellendus dolor minima at similique deserunt! Error amet animi vitae quis, maiores veritatis ad asperiores.</p>
+				<p><a href="#" class="btn">Bottone</a></p>
 
-			{{! Gallery }}
-			{{> organisms-gallery-basic }}
+				{{! Gallery }}
+				{{> organisms-gallery-basic }}
+			</div>
 		</div>
 	</div>
 
