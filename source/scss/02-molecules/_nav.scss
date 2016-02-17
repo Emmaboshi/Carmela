@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .nav {
-	text-align: left;
+	text-align: center;
 
 	.js & {
 		max-height: 0;
@@ -34,6 +34,8 @@
 
 	// footer variant
 	&--footer {
+		text-align: left;
+
 		.js &,
 		& {
 			max-height: none;
