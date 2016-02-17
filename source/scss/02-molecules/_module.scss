@@ -3,6 +3,8 @@
    Generic Module styles
    ========================================================================== */
 
-// .mod {
-// 	@extend %clearfix;
-// }
+.mod {
+	@extend %clearfix;
+	margin: 2rem 0;
+	padding: 1rem 0;
+}
