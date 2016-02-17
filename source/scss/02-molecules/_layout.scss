@@ -53,22 +53,22 @@ article {
 .col {
 	max-width: 100%;
 
-	.colgroup & {
+	.colgroup > & {
 		width: 95%;
 		max-width: $text-line-length;
 	}
 
-	.colgroup-2 & {
+	.colgroup-2 > & {
 		width: 50%;
 	}
 
-	.colgroup-3 & {
+	.colgroup-3 > & {
 		@include fromTablet {
 			width: 33%;
 		}
 	}
 
-	.colgroup-4 & {
+	.colgroup-4 > & {
 		width: 50%;
 
 		@include fromTablet {
@@ -76,12 +76,11 @@ article {
 		}
 	}
 
-	.colgroup-5 & {
+	.colgroup-5 > & {
 		width: 33%;
 
 		@include fromTablet {
 			width: 20%;
 		}
 	}
-
 }

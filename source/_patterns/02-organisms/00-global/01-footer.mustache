@@ -1,28 +1,39 @@
 <footer class="footer" role="contentinfo">
+
+	{{! Footer sponsor }}
+	<div class="wrapper footer__sponsor">
+		<h3>Sponsor istituzionali</h3>
+		<div class="colgroup-4">
+			<div class="col">
+				<a href="#">
+					{{> atoms-square}}
+				</a>
+			</div>
+			<div class="col">
+				<a href="#">
+					{{> atoms-square}}
+				</a>
+			</div>
+			<div class="col">
+				<a href="#">
+					{{> atoms-square}}
+				</a>
+			</div>
+			<div class="col">
+				<a href="#">
+					{{> atoms-square}}
+				</a>
+			</div>
+		</div>
+	</div>
+
 	{{> molecules-footer-nav }}
 
-	<div class="footer__main">
+	<div class="wrapper footer__main">
 		<div class="footer__logo">
 			{{> atoms-logo }}
 		</div>
-		<div class="colgroup-4">
-			<div class="col">
-				{{> atoms-square}}
-				<p>Lorem ipsum dolor sit amet, consectetur.</p>
-			</div>
-			<div class="col">
-				{{> atoms-square}}
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-			</div>
-			<div class="col">
-				{{> atoms-square}}
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-			</div>
-			<div class="col">
-				{{> atoms-square}}
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-			</div>
-		</div>
+		{{> molecules-address }}
 	</div>
 
 	{{> molecules-credits }}
