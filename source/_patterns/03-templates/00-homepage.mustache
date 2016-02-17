@@ -4,18 +4,12 @@
 	{{! Hero / masthead }}
 	{{> molecules-block-hero-plus }}
 
-	{{! Three cols }}
-	<div class="colgroup-3">
-		{{# touts}}
-			<div class="col">
-				{{> molecules-block-inset }}
-			</div>
-		{{/ touts}}
-	</div><!--end 3up-->
-
-
-	{{! Single col }}
 	<div class="wrapper">
+
+		{{! Three cols }}
+		{{> organisms-card-list }}
+
+		{{! Single col }}
 		<div class="colgroup">
 			<div class="col">
 				{{> molecules-heading-group }}
@@ -28,6 +22,7 @@
 				{{> organisms-gallery-basic }}
 			</div>
 		</div>
+
 	</div>
 
 	{{! Newsletter }}

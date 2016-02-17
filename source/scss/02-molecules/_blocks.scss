@@ -123,29 +123,94 @@ $hero-background: $c-transparent-bg;
 
 /* Block Card */
 .block-card {
-	margin-bottom: .5rem;
 	position: relative;
 
-	.b-thumb {
+	.block__thumb {
+		float: left;
+		height: 100px;
+		overflow: hidden;
 		position: relative;
-		z-index: 0;
+		width: 100px;
+
+		@include fromTablet {
+			float: none;
+			height: auto;
+			overflow: visible;
+			width: 100%;
+		}
 
 		img {
-			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 150%;
+			max-width: none;
+
+			@include fromTablet {
+				position: static;
+				top: auto;
+				left: auto;
+				width: auto;
+				max-width: 100%;
+			}
+		}
+	}
+
+	$block__text-padding: 120px;
+
+	.block__text {
+		box-sizing: content-box;
+		min-height: 90px;
+		padding-bottom: 1.2rem;
+		padding-left: $block__text-padding;
+		position: relative;
+
+		p {
+			display: none;
+		}
+
+		@include fromTablet {
+			width: 100%;
+			padding-left: 0;
+		}
+
+		@include fromDesktop {
+			p {
+				display: block;
+			}
 		}
 	}
 
 	.headline {
-		font-size: 1.1em;
+		@extend %font-headings;
+		font-size: 2.6rem;
+		line-height: 2.6rem;
+		margin: 0 0 .5rem;
+
+		@include untilTablet {
+			font-family: $font-secondary;
+			font-size: 1.1rem;
+			line-height: 1.5rem;
+		}
+
+		// @include fromTablet {}
 	}
 
-	.b-text {
-		position: absolute;
+	time {
+		@extend %small;
 		bottom: 0;
-		left: 0;
-		width: 100%;
-		background: $hero-background;
-		color: white;
-		padding: .5rem;
+		position: absolute;
+		right: 5px;
+	}
+
+	.block__category {
+		@extend %small;
+		bottom: 0;
+		left: $block__text-padding;
+		position: absolute;
+
+		@include fromTablet {
+			left: 5px;
+		}
 	}
 }
