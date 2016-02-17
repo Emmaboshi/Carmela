@@ -5,8 +5,21 @@
 	{{> molecules-block-hero }}
 
 	<div class="wrapper">
-		{{> organisms-article-body }}
+		<div class="colgroup">
+			<div class="col">
+				{{> molecules-heading-group }}
+
+				{{> organisms-article-body }}
+			</div>
+		</div>
+
+		{{! Three cols }}
+		{{> organisms-card-list }}
+
+		{{> molecules-pagination }}
+
 	</div>
+	{{! Single col }}
 
 </div><!--End role=main-->
 
