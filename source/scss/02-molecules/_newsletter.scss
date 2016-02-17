@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Newsletter
+   ========================================================================== */
+
+.newsletter {
+
+	@include fromTablet {
+		.colgroup-2 > .col {
+			padding: 1rem;
+		}
+	}
+}
+
+.newsletter__title {
+
+	@include fromTablet {
+		text-align: center;
+	}
+}

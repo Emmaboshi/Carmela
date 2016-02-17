@@ -29,10 +29,28 @@
 	}
 }
 
-
 article {
 	max-width: $text-line-length;
 }
+
+
+
+/*
+   Single, indipendent, modules 
+   ========================================================================== */
+
+.mod {
+	margin: 2rem 0;
+
+	@include fromTablet {
+		margin: 3rem 0;
+	}
+
+	@include fromDesktop {
+		margin: 4rem 0;
+	}
+}
+
 
 /*
    Grid system
@@ -51,6 +69,7 @@ article {
 }
 
 .col {
+	width: 100%;
 	max-width: 100%;
 
 	.colgroup > & {
@@ -59,10 +78,14 @@ article {
 	}
 
 	.colgroup-2 > & {
-		width: 50%;
+
+		@include fromTablet {
+			width: 50%;
+		}
 	}
 
 	.colgroup-3 > & {
+
 		@include fromTablet {
 			width: 33%;
 		}
