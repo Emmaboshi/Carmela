@@ -3,6 +3,7 @@
    ========================================================================== */
 
 .nav {
+	text-align: left;
 
 	.js & {
 		max-height: 0;
@@ -24,9 +25,23 @@
 
 	li {
 		display: block;
+		text-align: center;
 
 		@include fromTablet {
 			position: relative;
+		}
+	}
+
+	// footer variant
+	&--footer {
+		.js &,
+		& {
+			max-height: none;
+			overflow: visible;
+		}
+
+		@include fromTablet {
+			text-align: center;
 		}
 	}
 }
@@ -41,6 +56,20 @@
 
 		> li {
 			display: inline-block;
+		}
+	}
+
+	// footer variant
+	.nav--footer & {
+
+		> li {
+			display: inline-block;
+			width: 50%;
+			margin-right: -5px;
+
+			@include fromTablet {
+				width: auto;
+			}
 		}
 	}
 }
