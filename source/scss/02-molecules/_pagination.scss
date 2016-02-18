@@ -1,0 +1,58 @@
+
+/*
+   Generic Module styles
+   ========================================================================== */
+
+.pagination {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+
+	@include fromTablet {
+		position: relative;
+	}
+
+	> li {
+		display: inline-block;
+		background-color: rgba(255,255,255,0.2);
+		margin-right: 0.2rem;
+		height: 30px;
+		width: 25px;
+		text-align: center;
+
+		@include fromTablet {
+			width: 30px;
+		}
+
+		&.pagination__arrow {
+			@include fromTablet {
+				position: absolute;
+				top: 50%;
+				margin-top: -15px;
+
+				&.prev {
+					left: 0;
+				}
+
+				&.next {
+					right: 0;
+				}
+			}
+		}
+	}
+
+	a {
+		display: block;
+		color: $c-dark-grey;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			color: $c-primary;
+		}
+	}
+
+	.current a {
+		color: $c-primary;
+	}
+}

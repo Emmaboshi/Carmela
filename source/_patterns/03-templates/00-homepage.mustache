@@ -4,57 +4,31 @@
 	{{! Hero / masthead }}
 	{{> molecules-block-hero-plus }}
 
-	{{! Three cols }}
-	<div class="colgroup-3">
-		{{# touts}}
+	<div class="wrapper">
+
+		{{! Single col }}
+		<div class="colgroup">
 			<div class="col">
-				{{> molecules-block-inset }}
+				{{> molecules-heading-group }}
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta deserunt modi et cumque. Recusandae, dolorem nulla. Ipsum voluptates esse sit magnam! Dolorum suscipit veniam soluta dolores ducimus, inventore tenetur rerum?</p>
+				<hr />
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa vel cum, porro, deleniti magni est repellendus dolor minima at similique deserunt! Error amet animi vitae quis, maiores veritatis ad asperiores.</p>
+				<p><a href="#" class="btn">Bottone</a></p>
+
+				{{! Gallery }}
+				{{> organisms-gallery-basic }}
 			</div>
-		{{/ touts}}
-	</div><!--end 3up-->
+		</div>
 
-	<hr />
-
-	{{! Single col }}
-	<div class="colgroup">
-		<div class="col">
-			<h2>Titolo h2</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta deserunt modi et cumque. Recusandae, dolorem nulla. Ipsum voluptates esse sit magnam! Dolorum suscipit veniam soluta dolores ducimus, inventore tenetur rerum?</p>
-			<p><a href="#" class="btn">Bottone</a></p>
-		</div>
-	</div>
-
-	{{! Four cols }}
-	<div class="colgroup-4">
-		<div class="col">
-			{{> atoms-square }}
-		</div>
-		<div class="col">
-			{{> atoms-square }}
-		</div>
-		<div class="col">
-			{{> atoms-square }}
-		</div>
-		<div class="col">
-			{{> atoms-square }}
-		</div>
-		<div class="col">
-			{{> atoms-square }}
-		</div>
-		<div class="col">
-			{{> atoms-square }}
-		</div>
-		<div class="col">
-			{{> atoms-square }}
-		</div>
-		<div class="col">
-			{{> atoms-square }}
-		</div>
 	</div>
 
 	{{! Newsletter }}
-	{{> molecules-newsletter }}
+	<div class="wrapper">
+		{{> molecules-newsletter }}
+	</div>
 
 </div><!--End role=main-->
+
+{{> organisms-cookie }}
 
 {{> organisms-footer }}

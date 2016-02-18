@@ -61,11 +61,14 @@
  
 
 /* End Myfonts.com set */
+$font-primary: 'DharmaSlab', 'Comic Sans', Times, Helvetica, Arial, sans-serif;
 
 %font-primary {
-	font-family: 'DharmaSlab', 'Comic Sans', Times, Helvetica, Arial, sans-serif;
+	font-family: $font-primary;
 }
 
+$font-secondary: 'Sailec', Helvetica, Arial, sans-serif;
+
 %font-secondary {
-	font-family: 'Sailec', Helvetica, Arial, sans-serif;
+	font-family: $font-secondary;
 }

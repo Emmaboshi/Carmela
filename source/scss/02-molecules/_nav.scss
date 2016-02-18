@@ -3,12 +3,185 @@
    ========================================================================== */
 
 .nav {
+	text-align: center;
+
+	.js & {
+		max-height: 0;
+		overflow: hidden;
+
+		&.isActive {
+			max-height: 100em;
+		}
+
+		@include fromTablet {
+			max-height: none;
+			overflow: visible;
+		}
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		display: block;
+		text-align: center;
+
+		@include fromTablet {
+			position: relative;
+		}
+	}
+
+	// footer variant
+	&--footer {
+		text-align: left;
+
+		.js &,
+		& {
+			max-height: none;
+			overflow: visible;
+		}
+
+		@include fromTablet {
+			text-align: center;
+		}
+	}
 }
 
-.nav-list {
-	list-style: none;
+.nav__list {
+	border-bottom: solid 1px $c-borders;
+	margin: 0;
+	padding-left: 0;
 
-	> li {
+	@include fromTablet {
+		border-top: solid 1px $c-borders;
+
+		> li {
+			display: inline-block;
+		}
+	}
+
+	// footer variant
+	.nav--footer & {
+
+		> li {
+			display: inline-block;
+			margin-right: -5px;
+			width: 50%;
+
+			@include fromTablet {
+				width: auto;
+			}
+		}
+	}
+}
+
+// subpages
+.nav__sublist {
+
+	.js & {
+		max-height: 0;
+		overflow: hidden;
+		padding: 0 1rem;
+	}
+
+	.isActive > & {
+		border-top: solid 1px $c-borders;
+		max-height: 100em;
+	}
+
+	.no-js & {
+		border-top: solid 1px $c-borders;
+	}
+
+	@include fromTablet {
+
+		.js &,
+		.no-js & {
+			background-color: rgba(255,255,255,0.5);
+			padding: 0 1rem 0 0;
+			position: absolute;
+			top: 100%;
+			z-index: 2;
+		}
+	}
+}
+
+// nav links
+.nav__link {
+	border-top: solid 1px $c-borders;
+	color: $c-dark-grey;
+	display: block;
+	padding: .5rem 1rem .2rem;
+
+	@include fromTablet {
+		border-top: none;
+	}
+
+	// active status
+	.isActive > &,
+	&:hover,
+	&:focus {
+		color: $c-primary;
+		text-decoration: none;
+	}
+
+	// chevron down
+	.hasSubpages > & {
+
+		&:after {
+			@extend %icon-font;
+			content: "\e94e";
+			margin-left: 5px;
+		}
+	}
+
+	// chevron up
+	.no-js .hasSubpages > &,
+	.hasSubpages.isActive > & {
+
+		&:after {
+			content: "\e94d";
+		}
+	}
+
+	// subpage links
+	.nav__sublist & {
+		@extend %small;
+		border-top-color: lighten($c-borders, 30%);
+		padding: 0.2rem .7rem 0;
+
+		@include fromTablet {
+			white-space: nowrap;
+		}
+	}
+
+	.nav__sublist li:first-child & {
+		border-top: none;
+	}
+}
+
+// menu link
+.nav__toggle {
+	display: none;
+
+	&,
+	&:hover,
+	&:active {
+		text-decoration: none;
+	}
+
+	.js & {
 		display: inline-block;
+
+		@include fromTablet {
+			display: none;
+		}
+	}
+
+	.header & {
+		margin-top: -60px;
+		position: absolute;
+		right: 5%;
 	}
 }

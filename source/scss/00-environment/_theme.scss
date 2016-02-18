@@ -1,0 +1,83 @@
+/* ==========================================================================
+   #Themes
+   ========================================================================== */
+
+
+/* default theme */
+body {
+	color: $c-dark-grey;
+}
+
+a {
+	color: $c-primary;
+}
+
+hr {
+	background: #333; 
+	background-image: linear-gradient(to right, white, $c-primary, white);
+}
+
+.page-title {
+	color: $c-primary;
+}
+
+/* dark background */
+.t-invert {
+	background-color: $c-dark-grey;
+	color: white;
+
+	p {
+		color: white;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: $c-primary;
+	}
+}
+
+/* primary color background */
+.t-primary {
+	background-color: $c-primary;
+	color: white;
+
+	a {
+		color: $c-dark-grey;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: white;
+	}
+}
+
+/* greyscale box */
+.t-greyscale {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: $c-dark-grey;
+	}
+
+	&.t-invert {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: white;
+		}
+	}
+}

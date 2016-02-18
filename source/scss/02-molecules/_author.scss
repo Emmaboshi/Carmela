@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Author
+   ========================================================================== */
+
+.author {
+
+	.avatar {
+		border-radius: 28px;
+		display: block;
+		display: inline-block;
+		overflow: hidden;
+	}
+
+	.photo {
+		width: 56px;
+		height: 56px;
+		display: block;
+	}
+
+	.command {
+		font-size: .8rem;
+
+		@fromTablet {
+			font-size: .9rem;
+		}
+	}
+}

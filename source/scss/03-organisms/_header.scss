@@ -4,24 +4,50 @@
 
 
 .header {
-	text-align: center;
-	position: relative;
+
+	@include fromTablet {
+		text-align: center;
+	}
+
+	.wrapper {
+		position: relative;
+	}
 
 	.logo,
 	.logo-secondary {
-		display: block;
+		img {
+			width: 100%;
+		}
 	}
 
 	.logo {
+		display: inline-block;
+		margin: 2rem auto;
 		max-width: 20em;
+		width: 60%;
 	}
 
 	.logo-secondary {
-		max-width: 8em;
+		display: none;
+
+		@include fromTablet {
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			max-width: 140px;
+		}
 	}
 }
 
 .header__address {
+	@extend %small;
 	text-align: center;
+	padding: 1rem 0;
+	background-color: $c-primary-lighten;
+
+	p {
+		margin-bottom: 0;
+	}
 }
 

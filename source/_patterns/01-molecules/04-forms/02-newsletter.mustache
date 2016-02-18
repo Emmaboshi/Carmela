@@ -1,14 +1,24 @@
-<h3>Iscriviti alla nostra newsletter</h3>
-<form action="{{ url }}" method="post" class="inline-form newsletter-form">           
-	<p>Newsletter lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam similique laboriosam aspernatur tenetur minima reprehenderit aliquam itaque, architecto magnam numquam fuga, quam voluptas eius fugiat a nisi illo? Id, corrupti.</p>
-	<fieldset>
-		<legend>A once a week email with no spam, no rambling. Just pure awesome links to the best news and articles to hit the interweb during the week.</legend>
-
-		<label for="newsletter-scope">Sign up for our newsletter</label>
-		<div class="inline-container">
-			<input type="email" placeholder="johnny@cage.com" id="newsletter-field" />
-			<button class="btn newsletter-submit">Sign Me Up</button>
-			<small class="field-note">Please use your real email</small>
+<div class="newsletter mod">
+	<h3 class="newsletter__title">Iscriviti alla nostra newsletter</h3>
+	<form action="{{ url }}" method="post" class="inline-form newsletter-form">           
+		<div class="colgroup-2">
+			<div class="col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab voluptates, eaque facilis minus aliquam libero consequatur voluptatum hic, neque placeat a, saepe aliquid iste quasi et accusantium. Quibusdam, saepe, minima!</p>
+			</div>
+			<div class="col">
+				<fieldset>
+					{{! <label for="newsletter-scope">Sign up for our newsletter</label> }}
+					<div class="inline-container">
+						{{! <input type="email" placeholder="johnny@cage.com" id="newsletter-field" /> }}
+						<div class="field-container">
+							<label for="emailaddress">Indirizzo Email</label>
+							<input id="emailaddress" type="email" placeholder="john@cage.com">
+							<small class="field-note">Niente spam. Giuro.</small>
+						</div>
+						<button class="btn newsletter-submit">Iscrivimi</button>
+					</div>
+				</fieldset>
+			</div>
 		</div>
-	</fieldset>
-</form>
+	</form>
+</div>

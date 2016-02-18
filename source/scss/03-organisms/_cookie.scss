@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Cookie
+   ========================================================================== */
+
+
+.cookie {
+	display: none;
+	background-color: $c-lightest-grey;
+	border-top: solid 1px $c-medium-grey;
+
+	&.isActive {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	&.mod {
+		margin-bottom: 0;
+	}
+}
+
+.cookie__title {
+	margin: 0;
+}
+
+.cookie__body {
+
+	@include fromTablet {
+		margin-bottom: 0;
+	}
+}
+
+.cookie__confirm {
+	margin-bottom: 0;
+
+	@include fromTablet {
+		text-align: right;
+	}
+}

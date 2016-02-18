@@ -17,6 +17,7 @@
 	width: 95%;
 	max-width: $desktop-breakpoint;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .wrapper-article {
@@ -28,10 +29,10 @@
 	}
 }
 
-
 article {
 	max-width: $text-line-length;
 }
+
 
 /*
    Grid system
@@ -50,26 +51,41 @@ article {
 }
 
 .col {
-	.colgroup & {
+	width: 100%;
+	max-width: 100%;
+
+	.colgroup > & {
 		width: 95%;
 		max-width: $text-line-length;
 	}
 
-	.colgroup-2 & {
-		width: 50%;
+	.colgroup-2 > & {
+
+		@include fromTablet {
+			width: 49%;
+		}
 	}
 
-	.colgroup-3 & {
+	.colgroup-3 > & {
+
+		@include fromTablet {
+			width: 32%;
+		}
+	}
+
+	.colgroup-4 > & {
+		width: 49%;
+
+		@include fromTablet {
+			width: 24%;
+		}
+	}
+
+	.colgroup-5 > & {
 		width: 33%;
+
+		@include fromTablet {
+			width: 20%;
+		}
 	}
-
-	.colgroup-4 & {
-		width: 25%;
-	}
-
-	.colgroup-5 & {
-		width: 20%;
-
-	}
-
 }

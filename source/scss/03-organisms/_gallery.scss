@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Gallery - Slick plugin
+   http://kenwheeler.github.io/slick/
+   ========================================================================== */
+
+
+.gallery {
+	text-align: center;
+}
+
+button.slick-arrow {
+	@extend %icon-square;
+}
+
+.slick-prev {
+	left: 0;
+
+	&:before {
+		content: "\e932";
+	}
+}
+
+.slick-next {
+	right: 0;
+
+	&:before {
+		content: "\e92e";
+	}
+}

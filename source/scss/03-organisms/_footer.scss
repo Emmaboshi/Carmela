@@ -5,3 +5,28 @@
 
 // .footer {
 // }
+
+// sponsor stripe
+.footer__sponsor {
+	margin-bottom: 2rem;
+
+	a {
+		display: block;
+		padding: 0 .5rem .5rem;
+	}
+
+	img {
+		display: block;
+	}
+}
+
+.footer__main {
+	padding: 2rem;
+	text-align: center;
+}
+
+.footer__logo {
+	margin: 2rem auto;
+	max-width: 500px;
+	width: 80%;
+}

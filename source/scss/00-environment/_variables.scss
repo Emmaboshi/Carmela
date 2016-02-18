@@ -13,11 +13,11 @@
 
 /* Primary colors */
 $c-primary: #fc5728;
-$c-primary-lighten: #fdab8d;
-$c-primary-darken: #7e2b12;
+$c-primary-lighten: lighten($c-primary, 30%);
+$c-primary-darken: darken($c-primary, 30%);
 $c-secondary: #e50e46;
-$c-secondary-lighten: #f087a2;
-$c-secondary-darken: #710a25;
+$c-secondary-lighten: lighten($c-secondary, 30%);
+$c-secondary-darken: darken($c-secondary, 30%);
 
 /* Grayscale */
 $c-black: #000000;
@@ -25,6 +25,8 @@ $c-dark-grey: #333333;
 $c-medium-grey: #767676;
 $c-light-grey: #e3e3e3;
 $c-lightest-grey: #f6f6f6;
+$c-borders: $c-medium-grey;
+$c-transparent-bg: rgba(0,0,0,.5);
 
 /* Social */
 $c-facebook-blue: #3b5998;
@@ -55,8 +57,8 @@ $form-padding: .8rem .8rem .6rem;
 	========================================================================== */
 
 // responsive variables used in mixins.scss
-$mobile-breakpoint: 25em; // mobile portrait width ~400 - 1 prima 2 poi
-$tablet-breakpoint: 48em; // tablet portrait width ~768 - 2 prima 3 poi
-$desktop-breakpoint: 64em; // desktop landscape width ~1152 - 3 prima 4 poi - prima era 72
-$cinema-breakpoint: 88em; // cinema landscape width ~1200 - 4 prima 5 poi
+$mobile-breakpoint: 29em; // mobile portrait width ~400
+$tablet-breakpoint: 48em; // tablet portrait width ~768
+$desktop-breakpoint: 64em; // desktop landscape width ~1152
+$cinema-breakpoint: 88em; // cinema landscape width ~1200
 

@@ -8,6 +8,8 @@
 '00-environment/variables',
 '00-environment/zindex',
 '00-environment/utils',
+'00-environment/slick',
+'00-environment/theme',
 // '00-environment/gridset',
 // '00-environment/js',
 
@@ -26,10 +28,17 @@
 '02-molecules/nav',
 '02-molecules/blocks',
 '02-molecules/credits',
+'02-molecules/author',
+'02-molecules/pagination',
+'02-molecules/tabs',
+'02-molecules/newsletter',
 
 // ** Organisms
 '03-organisms/footer',
 '03-organisms/header',
+'03-organisms/gallery',
+'03-organisms/cookie',
+'03-organisms/cards',
 
 // Templates
 '04-templates/homepage';

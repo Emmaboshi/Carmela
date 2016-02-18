@@ -1,5 +1,8 @@
-// $(function(){
-// 	"use strict";
-// 	@import "data-toggleclass.js";
-// });
-// @import "js-no-js.js"; // depends on jQuery
+
+$(function(){
+	"use strict";
+	@import "js-no-js.js"; // depends on jQuery
+	@import "data-toggleclass.js";
+
+	 $('.j-gallery').slick();
+});
