@@ -62,22 +62,22 @@ article {
 	.colgroup-2 > & {
 
 		@include fromTablet {
-			width: 50%;
+			width: 49%;
 		}
 	}
 
 	.colgroup-3 > & {
 
 		@include fromTablet {
-			width: 33%;
+			width: 32%;
 		}
 	}
 
 	.colgroup-4 > & {
-		width: 50%;
+		width: 49%;
 
 		@include fromTablet {
-			width: 25%;
+			width: 24%;
 		}
 	}
 
