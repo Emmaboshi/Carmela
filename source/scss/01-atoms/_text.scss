@@ -13,6 +13,13 @@
 body {
 	@extend %font-body;
 	font-size: 16px;
+
+	* {
+		ont-variant-ligatures: common-ligatures;
+		-moz-font-feature-settings: "liga", "clig";
+		-webkit-font-feature-settings: "liga", "clig";
+		font-feature-settings: "liga", "clig";
+	}
 }
 
 p,
