@@ -15,14 +15,14 @@
 
 	&:hover,
 	&:focus {
-		background-color: $c-medium-grey;
-		border-color: $c-medium-grey;
+		background-color: $c-primary-darken;
+		border-color: $c-primary-darken;
 		text-decoration: none;
 	}
 
 	&:active {
-		background-color: $c-dark-grey;
-		border-color: $c-dark-grey;
+		background-color: darken($c-primary-darken, 5%);
+		border-color: darken($c-primary-darken, 5%);
 	}
 
 	&.disabled {
