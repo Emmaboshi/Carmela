@@ -1,0 +1,26 @@
+{
+	"isHome" : true,
+	"bodyClass" : "template-article",
+	"img": {
+		"landscape-4x3": {
+			"src": "../../images/sample/IMG_1577.jpg",
+			"alt": "4x3 Image"
+		},
+		"landscape-16x9": {
+			"src": "../../images/sample/landscape-16x9-mountains.jpg",
+			"alt": "16x9 Image"
+		},
+		"square": {
+			"src": "../../images/sample/IMG_3054.jpg",
+			"alt": "Square Thumbnail"
+		},
+		"avatar" : {
+			"src" : "../../images/fpo_avatar.png",
+			"alt" : "Person Name"
+		},
+		"rectangle": {
+			"src": "http://placeimg.com/400/300/tech",
+			"alt": "Rectangle"
+		}
+	}
+}
