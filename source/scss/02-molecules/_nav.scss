@@ -3,7 +3,6 @@
    ========================================================================== */
 
 .nav {
-	text-align: center;
 
 	.js & {
 		max-height: 0;
@@ -25,7 +24,6 @@
 
 	li {
 		display: block;
-		text-align: center;
 
 		@include fromTablet {
 			position: relative;
