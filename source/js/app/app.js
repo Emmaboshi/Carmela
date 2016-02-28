@@ -5,6 +5,6 @@ $(function(){
 	@import "data-toggleclass.js";
 
 	 $('.j-gallery').slick();
-	 $('.slick-slide').swipebox();
+	 $('.slick-slide, .j-swipebox').swipebox();
 
 });
