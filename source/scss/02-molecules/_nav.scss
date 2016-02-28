@@ -63,6 +63,7 @@
 
 	// footer variant
 	.nav--footer & {
+		border-top: solid 1px $c-borders;
 
 		> li {
 			display: inline-block;
@@ -157,6 +158,12 @@
 
 	.nav__sublist li:first-child & {
 		border-top: none;
+	}
+
+	// footer navbar
+	.footer & {
+		border-top: none;
+		border-bottom: none;
 	}
 }
 
