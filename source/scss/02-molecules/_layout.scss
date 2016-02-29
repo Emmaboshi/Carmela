@@ -48,6 +48,10 @@ article {
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 	justify-content: space-around;
+
+	.cards & {
+		justify-content: space-between;
+	}
 }
 
 .col {
@@ -80,6 +84,12 @@ article {
 	.colgroup-4 > & {
 		width: 49%;
 
+		@include onMobile {
+			.cards & {
+				width: 100%;
+			}
+		}
+
 		@include fromTablet {
 			width: 24%;
 		}
@@ -87,6 +97,12 @@ article {
 
 	.colgroup-5 > & {
 		width: 33%;
+
+		@include onMobile {
+			.cards & {
+				width: 100%;
+			}
+		}
 
 		@include fromTablet {
 			width: 20%;

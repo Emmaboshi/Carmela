@@ -2,48 +2,20 @@
    Card
    ========================================================================== */
 
-.cards {
-
-	@include fromTablet {
-		clear: both;
-		display: flex;
-
-		-webkit-flex-flow: row wrap;
-		flex-flow: row wrap;
-		justify-content: space-between;
-	}
-}
-
 .card {
 	border-bottom: solid 1px $c-borders;
-	padding-bottom: .5rem;
 	margin-bottom: 1rem;
 
-	&:last-child {
-		border-bottom: none;
-	}
-
-	@include fromTablet {
-		width: 24%;
-		border-bottom: none;
-	}
-
-	@include fromDesktop {
-		width: 32%;
+	@include onMobile {
+		&:last-child {
+			border-bottom: none;
+		}
 	}
 }
 
 .cards__title {
-	@extend %font-headings;
 	border-top: solid 2px $c-borders;
 	margin: 0;
 	padding: .5rem 0 .6rem;
-	font-size: 2.6rem;
-	line-height: 2.6rem;
 	width: 100%;
-
-	@include fromTablet {
-		font-size: 3rem;
-		line-height: 3rem;
-	}
 }
