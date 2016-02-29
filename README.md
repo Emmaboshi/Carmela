@@ -2,7 +2,7 @@
 Carmela è la style-guide di Emmaboshi studio.
 
 ## Installazione
-1. Assicurati di aver installato `npm`,`grunt`, `sass`
+1. Assicurati di aver installato `npm`,`grunt`, `ruby` e `sass`
 2. Scarica e decomprimi il progetto.   
 Da terminale, dentro la cartella del progetto, esegui   
 `npm install`   

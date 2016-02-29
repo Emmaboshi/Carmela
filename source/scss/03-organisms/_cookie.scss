@@ -4,16 +4,17 @@
 
 
 .cookie {
-	display: none;
 	background-color: $c-lightest-grey;
 	border-top: solid 1px $c-medium-grey;
+	display: none;
 
 	&.isActive {
-		display: block;
-		position: fixed;
 		bottom: 0;
+		display: block;
 		left: 0;
+		position: fixed;
 		right: 0;
+		z-index: 2;
 	}
 
 	&.mod {
