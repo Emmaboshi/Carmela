@@ -1,6 +1,6 @@
 {
 	"isHome" : true,
-	"bodyClass" : "template-homepage",
+	"bodyClass" : "template-page",
 	"img": {
 		"landscape-4x3": {
 			"src": "../../images/sample/IMG_1577.jpg",

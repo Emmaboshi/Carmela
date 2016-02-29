@@ -3,7 +3,6 @@
    ========================================================================== */
 
 .nav {
-	text-align: center;
 
 	.js & {
 		max-height: 0;
@@ -25,7 +24,6 @@
 
 	li {
 		display: block;
-		text-align: center;
 
 		@include fromTablet {
 			position: relative;
@@ -63,6 +61,7 @@
 
 	// footer variant
 	.nav--footer & {
+		border-top: solid 1px $c-borders;
 
 		> li {
 			display: inline-block;
@@ -98,7 +97,7 @@
 
 		.js &,
 		.no-js & {
-			background-color: rgba(255,255,255,0.5);
+			background-color: rgba(255,255,255,0.9);
 			padding: 0 1rem 0 0;
 			position: absolute;
 			top: 100%;
@@ -112,7 +111,7 @@
 	border-top: solid 1px $c-borders;
 	color: $c-dark-grey;
 	display: block;
-	padding: .5rem 1rem .2rem;
+	padding: .5rem 1rem;
 
 	@include fromTablet {
 		border-top: none;
@@ -147,9 +146,8 @@
 
 	// subpage links
 	.nav__sublist & {
-		@extend %small;
 		border-top-color: lighten($c-borders, 30%);
-		padding: 0.2rem .7rem 0;
+		padding: 0.5rem .7rem ;
 
 		@include fromTablet {
 			white-space: nowrap;
@@ -158,6 +156,12 @@
 
 	.nav__sublist li:first-child & {
 		border-top: none;
+	}
+
+	// footer navbar
+	.footer & {
+		border-top: none;
+		border-bottom: none;
 	}
 }
 
@@ -180,8 +184,9 @@
 	}
 
 	.header & {
-		margin-top: -60px;
 		position: absolute;
 		right: 5%;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 }

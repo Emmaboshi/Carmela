@@ -20,3 +20,12 @@ figcaption {
 	padding: .4rem .6rem 1rem 0;
 	color: $c-medium-grey;
 }
+
+article a > img {
+	opacity: 1;
+
+	&:hover,
+	&:focus {
+		opacity: .85;
+	}
+}

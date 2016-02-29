@@ -22,9 +22,13 @@
 
 	.logo {
 		display: inline-block;
-		margin: 2rem auto;
+		margin: 1.5rem auto;
 		max-width: 20em;
 		width: 60%;
+
+		@include fromTablet {
+			margin: 2.5rem auto;
+		}
 	}
 
 	.logo-secondary {
@@ -34,8 +38,9 @@
 			display: inline-block;
 			position: absolute;
 			right: 0;
-			top: 0;
-			max-width: 140px;
+			top: 10px;
+			max-width: 120px;
+			width: 20%;
 		}
 	}
 }
