@@ -26,7 +26,7 @@ $hero-background: $c-transparent-bg;
 	}
 
 	.block__text {
-		width: 95%;
+		width: $wrapper-width-mobile;
 		margin: 0 auto;
 		max-width: $text-line-length;
 	}
