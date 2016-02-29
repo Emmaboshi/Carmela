@@ -1,0 +1,18 @@
+{
+	"isHome" : true,
+	"bodyClass" : "template-archive",
+	"img": {
+		"landscape-4x3": {
+			"src": "../../images/sample/landscape-4x3.jpg",
+			"alt": "4x3 Image"
+		},
+		"landscape-16x9": {
+			"src": "../../images/sample/landscape-16x9.jpg",
+			"alt": "16x9 Image"
+		},
+		"square": {
+			"src": "../../images/sample/partner-logo-04.svg",
+			"alt": "Square Thumbnail"
+		}
+	}
+}

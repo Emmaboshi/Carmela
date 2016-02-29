@@ -195,6 +195,18 @@ $hero-background: $c-transparent-bg;
 
 	.headline {
 		margin: 0 0 .5rem;
+
+		.colgroup-2 & {
+			@include fromTablet {
+				font-size: 170%;
+			}
+		}
+
+		.colgroup-3 & {
+			@include fromTablet {
+				font-size: 130%;
+			}
+		}
 	}
 
 	time {

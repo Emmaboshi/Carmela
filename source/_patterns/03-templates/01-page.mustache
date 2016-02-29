@@ -1,31 +1,42 @@
 {{> organisms-header }}
 
 <div role="main">
-	{{! Hero / masthead }}
-	{{> molecules-block-hero }}
 
 	<div class="wrapper">
+
+		{{> molecules-heading-group }}
+
 		<div class="colgroup">
 			<div class="col">
-				{{> molecules-heading-group }}
-
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt possimus dolore, dicta dolorum cum expedita in unde incidunt molestias fugiat, hic, necessitatibus et quam sed doloremque explicabo eos vero accusamus earum. Commodi id cum assumenda magnam eos ex non totam!</p>
 			</div>
 		</div>
 
-		{{! Three cols }}
-		{{> organisms-card-list }}
+		<div class="table-wrapper">
+			{{> atoms-table(hideSmall: true) }}
+		</div>
 
-		{{> molecules-pagination }}
+		<div class="colgroup">
+			<div class="col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt possimus dolore, dicta dolorum cum expedita in unde incidunt molestias fugiat, hic, necessitatibus et quam sed doloremque explicabo eos vero accusamus earum. Commodi id cum assumenda magnam eos ex non totam!</p>
+
+				<div class="table-wrapper">
+					{{> atoms-table(hideBig: true) }}
+				</div>
+			</div>
+		</div>
 
 		<hr>
 
 		<div class="colgroup mod">
 			<div class="col">
+				<h3>Lorem ipsum dolor sit</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eveniet asperiores, beatae ipsa ex officiis ab laboriosam voluptatem. Culpa minus magni harum deserunt repellendus temporibus, sit cumque in sapiente rem.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt possimus dolore, dicta dolorum cum expedita in unde incidunt molestias fugiat, hic, necessitatibus et quam sed doloremque explicabo eos vero accusamus earum. Commodi id cum assumenda magnam eos ex non totam!</p>
 			</div>
 		</div>
+
+		<hr>
 
 		{{> molecules-newsletter }}
 

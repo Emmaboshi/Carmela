@@ -33,6 +33,16 @@ article {
 	max-width: $text-line-length;
 }
 
+/*
+   Table wrapper
+   ========================================================================== */
+
+.table-wrapper {
+	width: 100%;
+	max-width: 100%;
+	overflow: auto;
+}
+
 
 /*
    Grid system
@@ -48,10 +58,6 @@ article {
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 	justify-content: space-around;
-
-	.cards & {
-		justify-content: space-between;
-	}
 }
 
 .col {
