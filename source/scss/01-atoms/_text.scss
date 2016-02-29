@@ -79,17 +79,16 @@ h6 {
 .page-title {
 	@extend %font-headings;
 	font-size: 3rem;
-	
-	@include onMobile {
-		line-height: 3rem;
-	}
+	line-height: 3.6rem;
 
 	@include fromTablet {
 		font-size: 4rem;
+		line-height: 4.8rem;
 	}
 
 	@include fromDesktop {
 		font-size: 5rem;
+		line-height: 6rem;
 	}
 }
 

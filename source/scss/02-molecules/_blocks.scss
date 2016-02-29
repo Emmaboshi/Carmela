@@ -28,7 +28,12 @@ $hero-background: $c-transparent-bg;
 	.block__text {
 		width: $wrapper-width-mobile;
 		margin: 0 auto;
-		max-width: $text-line-length;
+
+		p {
+			max-width: $text-line-length;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
 	@include fromTablet {
@@ -82,7 +87,7 @@ $hero-background: $c-transparent-bg;
 
 	@include fromDesktop {
 		.block__text {
-			bottom: 1rem;
+			bottom: 2rem;
 			top: auto;
 			left: 0;
 			transform: none;
