@@ -60,6 +60,22 @@ $hero-background: $c-transparent-bg;
 			text-align: center;
 		}
 	}
+
+	@media screen and (min-width: 1244px) { // needs 16:9 image
+
+		.block__thumb {
+			max-height: 700px;
+			height: 700px;
+
+			img {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 0;
+				width: 100%;
+			}
+		}
+	}
 }
 
 .block--hero.block--hero-plus {
