@@ -22,7 +22,7 @@
 
 	.logo {
 		display: inline-block;
-		margin: 1.5rem auto;
+		margin: 1rem auto;
 		max-width: 20em;
 		width: 60%;
 
@@ -48,7 +48,7 @@
 .header__address {
 	@extend %small;
 	text-align: center;
-	padding: 1rem 0;
+	padding: .5rem 0;
 	background-color: $c-primary-lighten;
 
 	p {
