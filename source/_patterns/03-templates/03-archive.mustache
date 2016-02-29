@@ -1,0 +1,23 @@
+{{> organisms-header }}
+
+<div role="main">
+
+	{{> molecules-heading-group }}
+
+	<div class="wrapper">
+
+		{{! Three cols }}
+		{{> organisms-card-list(cols: 2) }}
+
+		{{> organisms-card-list(cols: 3) }}
+
+		{{> organisms-card-list(cols: 4) }}
+
+		{{> molecules-pagination }}
+
+	</div>
+	{{! Single col }}
+
+</div><!--End role=main-->
+
+{{> organisms-footer }}
