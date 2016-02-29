@@ -14,7 +14,7 @@
    ========================================================================== */
 %wrapper,
 .wrapper {
-	width: 95%;
+	width: $wrapper-width-mobile;
 	max-width: $desktop-breakpoint;
 	margin: 0 auto;
 	overflow: hidden;
@@ -31,6 +31,16 @@
 
 article {
 	max-width: $text-line-length;
+}
+
+/*
+   Table wrapper
+   ========================================================================== */
+
+.table-wrapper {
+	width: 100%;
+	max-width: 100%;
+	overflow: auto;
 }
 
 
@@ -57,6 +67,10 @@ article {
 	.colgroup > & {
 		width: 95%;
 		max-width: $text-line-length;
+
+		.wrapper & {
+			width: 100%;
+		}
 	}
 
 	.colgroup-2 > & {
@@ -76,6 +90,12 @@ article {
 	.colgroup-4 > & {
 		width: 49%;
 
+		@include onMobile {
+			.cards & {
+				width: 100%;
+			}
+		}
+
 		@include fromTablet {
 			width: 24%;
 		}
@@ -83,6 +103,12 @@ article {
 
 	.colgroup-5 > & {
 		width: 33%;
+
+		@include onMobile {
+			.cards & {
+				width: 100%;
+			}
+		}
 
 		@include fromTablet {
 			width: 20%;

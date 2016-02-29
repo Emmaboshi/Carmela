@@ -21,11 +21,10 @@ figcaption {
 	color: $c-medium-grey;
 }
 
-article a > img {
-	opacity: 1;
+a > img {
 
 	&:hover,
 	&:focus {
-		opacity: .85;
+		filter: brightness(.75);
 	}
 }

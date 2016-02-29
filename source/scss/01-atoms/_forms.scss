@@ -49,7 +49,7 @@ input[type='text'] {
 	padding: $form-padding;
 
 	@include fromTablet {
-		min-width: 22rem;
+		min-width: 20rem;
 	}
 
 	.is-wrong & {

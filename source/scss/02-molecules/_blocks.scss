@@ -26,9 +26,14 @@ $hero-background: $c-transparent-bg;
 	}
 
 	.block__text {
-		width: 95%;
+		width: $wrapper-width-mobile;
 		margin: 0 auto;
-		max-width: $text-line-length;
+
+		p {
+			max-width: $text-line-length;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
 	@include fromTablet {
@@ -60,13 +65,29 @@ $hero-background: $c-transparent-bg;
 			text-align: center;
 		}
 	}
+
+	@media screen and (min-width: 1244px) { // needs 16:9 image
+
+		.block__thumb {
+			max-height: 700px;
+			height: 700px;
+
+			img {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 0;
+				width: 100%;
+			}
+		}
+	}
 }
 
 .block--hero.block--hero-plus {
 
 	@include fromDesktop {
 		.block__text {
-			bottom: 1rem;
+			bottom: 2rem;
 			top: auto;
 			left: 0;
 			transform: none;
@@ -134,8 +155,8 @@ $hero-background: $c-transparent-bg;
 		img {
 			position: absolute;
 			top: 0;
-			left: 0;
-			width: 150%;
+			left: -15%;
+			width: 130%;
 			max-width: none;
 
 			@include fromTablet {
@@ -148,11 +169,10 @@ $hero-background: $c-transparent-bg;
 		}
 	}
 
-	$block__text-padding: 120px;
+	$block__text-padding: 110px;
 
 	.block__text {
 		box-sizing: content-box;
-		min-height: 90px;
 		padding-bottom: 1.2rem;
 		padding-left: $block__text-padding;
 		position: relative;
@@ -174,18 +194,19 @@ $hero-background: $c-transparent-bg;
 	}
 
 	.headline {
-		@extend %font-headings;
-		font-size: 2.6rem;
-		line-height: 3.1rem;
 		margin: 0 0 .5rem;
 
-		@include untilTablet {
-			font-family: $font-secondary;
-			font-size: 1.1rem;
-			line-height: 1.5rem;
+		.colgroup-2 & {
+			@include fromTablet {
+				font-size: 170%;
+			}
 		}
 
-		// @include fromTablet {}
+		.colgroup-3 & {
+			@include fromTablet {
+				font-size: 130%;
+			}
+		}
 	}
 
 	time {
@@ -202,7 +223,7 @@ $hero-background: $c-transparent-bg;
 		position: absolute;
 
 		@include fromTablet {
-			left: 5px;
+			left: 0;
 		}
 	}
 }

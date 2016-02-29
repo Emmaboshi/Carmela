@@ -9,6 +9,12 @@ table {
 	max-width: 100%;
 	margin-bottom: 2rem;
 	text-align: left;
+
+	// Tabular figures
+	font-variant-numeric: tabular-nums;
+	-moz-font-feature-settings: "tnum";
+	-webkit-font-feature-settings: "tnum";
+	font-feature-settings: "tnum";
 }
 
 td,
