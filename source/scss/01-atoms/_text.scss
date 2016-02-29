@@ -33,10 +33,6 @@ p {
 	@extend %font-body;
 	margin: 0 0 1rem;
 
-	@include untilTablet {
-		line-height: 1.5rem;
-	}
-
 	&.intro {
 		font-size: 1.3rem;
 		line-height: 1.9rem;
