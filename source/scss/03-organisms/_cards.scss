@@ -3,13 +3,10 @@
    ========================================================================== */
 
 .card {
-	border-bottom: solid 1px $c-borders;
 	margin-bottom: 1rem;
 
-	@include onMobile {
-		&:last-child {
-			border-bottom: none;
-		}
+	@include fromTablet {
+		margin-bottom: 2rem;
 	}
 }
 

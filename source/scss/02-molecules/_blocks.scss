@@ -155,8 +155,8 @@ $hero-background: $c-transparent-bg;
 		img {
 			position: absolute;
 			top: 0;
-			left: 0;
-			width: 150%;
+			left: -15%;
+			width: 130%;
 			max-width: none;
 
 			@include fromTablet {
@@ -169,11 +169,10 @@ $hero-background: $c-transparent-bg;
 		}
 	}
 
-	$block__text-padding: 120px;
+	$block__text-padding: 110px;
 
 	.block__text {
 		box-sizing: content-box;
-		min-height: 90px;
 		padding-bottom: 1.2rem;
 		padding-left: $block__text-padding;
 		position: relative;
@@ -212,7 +211,7 @@ $hero-background: $c-transparent-bg;
 		position: absolute;
 
 		@include fromTablet {
-			left: 5px;
+			left: 0;
 		}
 	}
 }
