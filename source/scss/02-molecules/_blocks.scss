@@ -53,6 +53,11 @@ $hero-background: $c-transparent-bg;
 				top: 0;
 			}
 		}
+		.block__thumb--picture{
+			&:after {
+				display: none;
+			}
+		}
 
 		.block__text {
 			position: absolute;
